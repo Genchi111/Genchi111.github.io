@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зелёный уголок · V16</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Зелёный уголок · V16</h1>
+    <header>
+      <nav>
+        <a href="index.html">Главная</a>
+      </nav>
+    </header>
+
+    <main>
+        <!-- Поле поиска по названию -->
+        <p>
+            <label for="search">Поиск по названию</label>
+            <input id="search" type="search" placeholder="Введите часть названия">
+        </p>
+
+        <!-- Пустой контейнер, куда JS добавит карточки -->
+        <div id="catalog-list" class="products"></div>
+
+        <!-- Счётчик показанных карточек или сообщение «Ничего не найдено» -->
+        <p id="status" role="status"></p>
+    </main>
+    <script src="catalog-page.js" defer></script>
+
+    <article class="card">
+      <nav>
+        <a href="form.html">Оставьте форму</a>
+      </nav>
+    </article>
+  </main>
+</body>
+</html>

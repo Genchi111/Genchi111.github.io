@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зелёный уголок · V16 — Подбор растения</title>
+    <!-- Если у вас есть файл стилей проекта, оставьте эту строку: -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Зелёный уголок · V16</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="index.html#catalog">Каталог</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Подбор растения</h2>
+
+        <form method="get">
+            <!-- 1. Выбор растения (id="item" нужен для form.js) -->
+            <p>
+                <label for="item">Растения</label><br>
+                <select id="item" name="item" required>
+                    <option value="">Выберите из списка</option>
+                    <option value="item1">Фикус</option>
+                    <option value="item2">Сансевиерия</option>
+                    <option value="item3">Хлорофитум</option>
+                </select>
+            </p>
+
+            <!-- 2. Количество единиц (id="quantity" нужен для form.js) -->
+            <p>
+                <label for="quantity">Количество единиц</label><br>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" step="1" required>
+            </p>
+
+            <!-- 3. Дополнительные поля из вашей формы -->
+            <p>
+                <label for="comment">Комментарий к заказу</label><br>
+                <textarea id="comment" name="comment" rows="3"></textarea>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="delivery" value="yes" checked>
+                    Нужна доставка
+                </label>
+            </p>
+
+            <p>
+                <label for="urgency">Срочность заказа</label><br>
+                <input type="range" id="urgency" name="urgency" min="1" max="5" value="3">
+            </p>
+
+            <!-- 4. Кнопка отправки -->
+            <button type="submit">Рассчитать</button>
+
+            <!-- 5. Место вывода результата (выделено жирным, чтобы сразу было видно) -->
+            <p id="result" role="status" aria-live="polite" style="font-weight: bold; margin-top: 15px;"></p>
+        </form>
+    </main>
+
+    <!-- Подключение скрипта формы -->
+    <script src="form.js" defer></script>
+</body>
+</html>
