@@ -1,24 +1,24 @@
 let catalog1 = {
     position: 1,
-    name: "фикус",
-    specs: "Высота 40 см · яркий свет",
-    description: "Зелёные листья для просторного места"
+    name: "телефон",
+    specs: "белый , большой",
+    description: "для затяжный разговоров"
 };
 
 // Таблица 2
 let catalog2 = {
     position: 2,
-    name: "Сансевиерия",
-    specs: "Высота 30 см · полутень",
-    description: "Компактное растение для рабочего стола"
+    name: "кнопочный телефон",
+    specs: "Серый, неубиваемый",
+    description: "Компактная орехоколка "
 };
 
 // Таблица 3
 let catalog3 = {
     position: 3,
-    name: "Хлорофитум",
-    specs: "Высота 25 см · рассеянный свет",
-    description: "Лёгкие листья для подвесной полки"
+    name: "смартфон",
+    specs: "Голубой , стильный",
+    description: "Для весёлого время провождения"
 };
 
 const catalog = [catalog1, catalog2, catalog3];
